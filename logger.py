@@ -89,6 +89,7 @@ def delete_data():
                 contact_info = item.replace('\n', ' ').split()
                 if len(contact_info) >= index + 1 and search_to_delete == contact_info[index]:
                     contact_info[index] = 'deleted'
+                    # new_data.append(' '.join(contact_info[:3]) + '\n'.join(contact_info[3:]))
                     new_data.append(f'{contact_info[0]} {contact_info[1]} {contact_info[2]}\n+7{contact_info[3]}\nГород: {contact_info[4]}\n')
                 else:
                     new_data.append(item)
