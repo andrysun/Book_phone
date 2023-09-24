@@ -1,4 +1,0 @@
-Иванов Петр Владимирович
-+79645871214
-Город: <built-in method title of str object at 0x0000022C6A00D920>
-
