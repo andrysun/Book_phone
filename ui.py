@@ -17,13 +17,13 @@ def user_iterface():
         match cmd:
             case '1':
                 enter_data()
-            # case '2':
-            #     print_data()
+            case '2':
+                print_data()
             case '3':
                 search_data()
-            # case '4':
-            #     change_data()
-            # case '5':
-            #     delete_data()
+            case '4':
+                change_data()
+            case '5':
+                delete_data()
             case '6':
                 print('Всего доброго!')
