@@ -27,3 +27,7 @@ def search_data():
                 print(item, end='\n\n')
             else:
                 print('Контакт не найден')
+
+def print_data():
+    with open('book.txt', 'r', encoding='utf_8') as file:
+        print(file.read())
