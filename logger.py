@@ -53,7 +53,7 @@ def change_data():
                 my_check = True
                 contact_info[index] = replacement
                 new_data.append(
-                    f'{contact_info[0]} {contact_info[1]} {contact_info[2]}\n+7{contact_info[3]}\nГород: {contact_info[4]}\n')
+                    f'{contact_info[0]} {contact_info[1]} {contact_info[2]}\n+7{contact_info[3]}\nГород: {contact_info[4]}\n\n')
             else:
                 new_data.append(item)
         else:
@@ -88,7 +88,7 @@ def delete_data():
                 if len(contact_info) >= index + 1 and search_to_delete == contact_info[index]:
                     contact_info[index] = 'deleted'
                     # new_data.append(' '.join(contact_info[:3]) + '\n'.join(contact_info[3:]))
-                    new_data.append(f'{contact_info[0]} {contact_info[1]} {contact_info[2]}\n+7{contact_info[3]}\nГород: {contact_info[4]}\n')
+                    new_data.append(f'{contact_info[0]} {contact_info[1]} {contact_info[2]}\n+7{contact_info[3]}\nГород: {contact_info[4]}\n\n')
                 else:
                     new_data.append(item)
         else:
