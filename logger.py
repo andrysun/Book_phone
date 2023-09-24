@@ -17,7 +17,7 @@ def search_data():
           '4 - Номер телефона\n'
           '5 - Адрес\n')
     index = int(input('Выберите вариант: ')) - 1
-    search = input('Поисковые данные: ')
+    search = input('Поисковые данные: ').title()
     with open('book.txt', 'r', encoding='utf_8') as file:
         data = file.read().strip().split('\n\n')
         for item in data:
@@ -31,3 +31,20 @@ def search_data():
 def print_data():
     with open('book.txt', 'r', encoding='utf_8') as file:
         print(file.read())
+
+# def change_data():
+#     print('Вы выбрали изменить данные контакта.')
+#     print('Выберите вариант поиска контакта, чью информацию вы хотите изменить:\n'
+#           '1 - Фамилия\n'
+#           '2 - Имя\n'
+#           '3 - Отчество\n'
+#           '4 - Номер телефона\n'
+#           '5 - Адрес\n')
+    
+# def delete_data():
+#     print('Выберите вариант поиска контакта, которого хотите удалить:\n'
+#           '1 - Фамилия\n'
+#           '2 - Имя\n'
+#           '3 - Отчество\n'
+#           '4 - Номер телефона\n'
+#           '5 - Адрес\n')
