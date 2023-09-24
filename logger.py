@@ -25,8 +25,6 @@ def search_data():
             new_item = item.replace('Город:', ' ').split()
             if search in new_item[index]:
                 print(item, end='\n\n')
-            else:
-                print('Контакт не найден')
 
 def print_data():
     with open('book.txt', 'r', encoding='utf_8') as file:
