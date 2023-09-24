@@ -15,5 +15,5 @@ def num_phone_person() -> str:
     return num_phone
 
 def region_addres_person() -> str:
-    addres = input('Город: ')
+    addres = input('Город: ').title
     return addres
